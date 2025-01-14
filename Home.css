@@ -12,7 +12,7 @@ body {
   height: 100vh;
 }
 .main-container {
-  width: 100vmax;
+  width: 100%;
   height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("./img/bg-01-free-img.jpg") no-repeat center center;
@@ -455,4 +455,36 @@ footer {
   justify-content: flex-end;
   color: #fff;
   gap: 20px;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (min-width: 600px) {
+  .main-container {
+    display: block;
+    width: 85%;
+    max-width: 720px;
+    padding: 2rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("./img/bg-01-free-img.jpg") no-repeat center center;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+  }
+
+  header {
+    width: 85%;
+    max-width: 720px;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .first-nav img {
+    width: 85%;
+    max-width: 720px;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
